@@ -1,13 +1,13 @@
 # og-image-django
 Como capturar a tag og:image utilizando o django 
 
-#instale a biblioteca BeautifulSoup
+# instale a biblioteca BeautifulSoup
 
 pip install requests beautifulsoup4
 
-#crie um arquivo no diretorio do seu projeto neste caso criei arquivo chamado functions.py
+# crie um arquivo no diretorio do seu projeto neste caso criei arquivo chamado functions.py
 
-#defina a função apra extrair a tag og:image
+# defina a função apra extrair a tag og:image
 
 import requests
 from bs4 import BeautifulSoup
@@ -23,7 +23,7 @@ def get_og_image(url):
         return og_image["content"]
     return None
 
-    na sua view import o função criar e segue um exemplo de como passar para o template
+# na sua view import o função criar e segue um exemplo de como passar para o template
 
     def my_view(request):
     url = "url/" # substitua pela URL que deseja
